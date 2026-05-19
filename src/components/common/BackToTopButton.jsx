@@ -1,1 +1,1 @@
-import { FaArrowRight } from "react-icons/fa"; 
+import { FaArrowRight } from "react-icons/fa";
