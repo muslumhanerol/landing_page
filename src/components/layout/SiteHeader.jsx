@@ -19,6 +19,13 @@ export default function SiteHeader({isScrolled, mebuopen, onToggleMenu, onCloseM
             <a href="#faq" className="transition hover:text-blue-300">FAQ</a>
          </nav>
 
+         <button onClick={onToggleMenu} className="mr-2 cursor-pointer rounded-lg border border-zinc-700 px-3 py-2 text-xs transition hover:border-blue-400 md:hidden">
+            <span className="flex items-center gap-2">
+                <FaBars/>
+                Menu
+            </span>
+         </button>
+
 
          </header>        
         </>
