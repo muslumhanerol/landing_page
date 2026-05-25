@@ -27,6 +27,9 @@ export default function SiteHeader({isScrolled, mebuopen, onToggleMenu, onCloseM
          </button>
 
 
+         <button className="hidden cursor-pointer rounded-lg border border-zinc-700 px-5 py-2 text-sm font-medium transition hover:border-blue-400 hover:text-blue-300 md:inline-flex md:items-center md:gap-2"></button>
+
+
          </header>        
         </>
     )
