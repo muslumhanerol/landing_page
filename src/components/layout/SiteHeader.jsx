@@ -13,7 +13,10 @@ export default function SiteHeader({isScrolled, mebuopen, onToggleMenu, onCloseM
          </div>
 
          <nav className="hidden items-center gap-6 text-sm text-zinc-300 md:flex">
-            <a href="#features" className="transition hover:text-blue-300"></a>
+            <a href="#features" className="transition hover:text-blue-300">Features</a>
+            <a href="#pricing" className="transition hover:text-blue-300">Pricing</a>
+            <a href="#about" className="transition hover:text-blue-300">About</a>
+            <a href="#faq" className="transition hover:text-blue-300">FAQ</a>
          </nav>
 
 
