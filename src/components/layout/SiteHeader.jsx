@@ -7,10 +7,16 @@ export default function SiteHeader({isScrolled, mebuopen, onToggleMenu, onCloseM
 
          <div className="flex items-center gap-3">
             <div className="flex h-9 w-9 items-center justify-center rounded-sm bg-linear-to-br from-blue-500 to-blue-700 shadow-lg shadow-blue-500/20">
-                <FaBrain className="text-white"/>
-            
+                <FaBrain className="text-white"/>            
             </div>
+            <span className="text-lg font-semibold tracking-wide">Muslum Bilgi Teknologileri</span>
          </div>
+
+         <nav className="hidden items-center gap-6 text-sm text-zinc-300 md:flex">
+            <a href="#features" className="transition hover:text-blue-300"></a>
+         </nav>
+
+
          </header>        
         </>
     )
