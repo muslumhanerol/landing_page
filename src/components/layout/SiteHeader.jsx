@@ -42,7 +42,10 @@ export default function SiteHeader({isScrolled, mebuopen, onToggleMenu, onCloseM
                     <a href="#pricing" onClick={onCloseMenu} className="transition hover:text-blue-300">Pricing</a>
                     <a href="#about" onClick={onCloseMenu} className="transition hover:text-blue-300">About</a>
                     <a href="#faq" onClick={onCloseMenu} className="transition hover:text-blue-300">FAQ</a>
-                    <button onClick={onCloseMenu} className="mt-2 inline-flex items-center justfy-center gap-2 rounded-lg bg-blue-500 px-4 py-2 font-semibold text-white"></button>
+                    <button onClick={onCloseMenu} className="mt-2 inline-flex items-center justfy-center gap-2 rounded-lg bg-blue-500 px-4 py-2 font-semibold text-white">
+                        <FaEnvelope/>
+                        Book a Demo
+                    </button>
                 </div>
             </div>
          )}
