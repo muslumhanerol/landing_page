@@ -17,7 +17,14 @@ export default function SiteFooter() {
                     </div>
 
                     <div className="flex items-center justify-center gap-5">
-                        <a href="#" className="inline-flex items-center gap-2 hover:text-blue-300"></a>
+                        <a href="#" className="inline-flex items-center gap-2 hover:text-blue-300">
+                            <FaLinkedin/>
+                            Linkedin
+                        </a>
+                         <a href="#" className="inline-flex items-center gap-2 hover:text-blue-300">
+                            <FaTwitter/>
+                            X / Twitter
+                        </a>
                     </div>
                 </div>
             </div>
