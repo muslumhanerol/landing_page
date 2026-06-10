@@ -12,7 +12,7 @@ export default function SiteFooter() {
                         </a>
                         <a href="tel:+5554443322" className="inline-flex items-center gap-2 hover:text-blue-300">
                             <FaPhone/>
-                            mslmhanerol@gmail.com
+                            +90 (555) 444-33-22
                         </a>
                     </div>
                 </div>
