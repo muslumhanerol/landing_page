@@ -6,7 +6,14 @@ export default function SiteFooter() {
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
                 <div className="flex flex-col items-center gap-3 sm:items-start">
                     <div className="flex items-center justify-center gap-5 ">
-                        <a href="mailto:hello@example.com" className="inline-flex items-center gap-2 hover:text-blue-300"></a>
+                        <a href="mailto:mslmhanerol@gmail.com" className="inline-flex items-center gap-2 hover:text-blue-300">
+                            <FaEnvelope/>
+                            mslmhanerol@gmail.com
+                        </a>
+                        <a href="tel:+5554443322" className="inline-flex items-center gap-2 hover:text-blue-300">
+                            <FaPhone/>
+                            mslmhanerol@gmail.com
+                        </a>
                     </div>
                 </div>
             </div>
