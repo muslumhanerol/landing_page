@@ -15,6 +15,10 @@ export default function SiteFooter() {
                             +90 (555) 444-33-22
                         </a>
                     </div>
+
+                    <div className="flex items-center justify-center gap-5">
+                        <a href="#" className="inline-flex items-center gap-2 hover:text-blue-300"></a>
+                    </div>
                 </div>
             </div>
         </footer>
