@@ -27,6 +27,7 @@ export default function SiteFooter() {
                         </a>
                     </div>
                 </div>
+                <p className="text-cebter sm:text-right">2026 MHE ARR</p>
             </div>
         </footer>
     )
