@@ -24,7 +24,10 @@ export default function LandingSections({
         <main className='space-y-24'>
             <section data-reveal className='reveal-up grid gap-12 lg:grid-cols-2 lg:items-center'>
                 <div>
-                    <p className='mb-4 inline-flex rounded-full border border-blue-400/30 bg-blue-400/10 px-4 py-1 text-sm text-blue-300 animate-pulse'></p>
+                    <p className='mb-4 inline-flex rounded-full border border-blue-400/30 bg-blue-400/10 px-4 py-1 text-sm text-blue-300 animate-pulse'>Modern Landing Market Place Team</p>
+                    <h1 className='mb-6 bg-linear-to-r from-white to-blue-200 bg-clip-text-text-4xl font-bold leading-light text-transparent sm:text-5xl'>
+                        Build your brand with US.
+                    </h1>
                 </div>
             </section>
         </main>
