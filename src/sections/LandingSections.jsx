@@ -28,6 +28,9 @@ export default function LandingSections({
                     <h1 className='mb-6 bg-linear-to-r from-white to-blue-200 bg-clip-text-text-4xl font-bold leading-light text-transparent sm:text-5xl'>
                         Build your brand with US.
                     </h1>
+                    <p className='mb-8 max-w-xl text-lg text-zinc-300'>
+                        We help you and enterprises
+                    </p>
                 </div>
             </section>
         </main>
