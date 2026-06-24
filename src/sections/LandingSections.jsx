@@ -29,8 +29,11 @@ export default function LandingSections({
                         Build your brand with US.
                     </h1>
                     <p className='mb-8 max-w-xl text-lg text-zinc-300'>
-                        We help you and enterprises
+                        We help you and enterprises launch reliable AI products with speed, security and measutable business impact.
                     </p>
+                    <div className='flex flex-wrap gap-4 justify-center'>
+                        <button className='rounded-lg bg-blue-500 px-6 py-3 font-semibold text-white shadow-lg'></button>
+                    </div>
                 </div>
             </section>
         </main>
