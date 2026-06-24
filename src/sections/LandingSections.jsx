@@ -39,6 +39,11 @@ export default function LandingSections({
                             View Platform
                         </button>
                     </div>
+                    
+                    <div className='mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4'>
+                        
+                    </div>
+                
                 </div>
             </section>
         </main>
