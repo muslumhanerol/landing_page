@@ -32,7 +32,9 @@ export default function LandingSections({
                         We help you and enterprises launch reliable AI products with speed, security and measutable business impact.
                     </p>
                     <div className='flex flex-wrap gap-4 justify-center'>
-                        <button className='rounded-lg bg-blue-500 px-6 py-3 font-semibold text-white shadow-lg'></button>
+                        <button className='rounded-lg bg-blue-500 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:-translate-y-0.5 hover:bg-blue-400'>
+                        Start Free Trial                        
+                        </button>
                     </div>
                 </div>
             </section>
