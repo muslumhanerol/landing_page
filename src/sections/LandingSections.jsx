@@ -35,6 +35,9 @@ export default function LandingSections({
                         <button className='rounded-lg bg-blue-500 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:-translate-y-0.5 hover:bg-blue-400'>
                         Start Free Trial                        
                         </button>
+                        <button className='rounded-lg border border-zinc-600 px-6 py-3 font-semibold transition hover:border-blue-400 hover:text-blue-300'>
+                            View Platform
+                        </button>
                     </div>
                 </div>
             </section>
