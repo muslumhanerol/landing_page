@@ -41,7 +41,9 @@ export default function LandingSections({
                     </div>
                     
                     <div className='mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4'>
-                        
+                        {stats.map((item) =>(
+                            <div key={item.lable} className="rounded-xl border border-zinc-800 bg-zinc-900/40"></div>
+                        ))}
                     </div>
                 
                 </div>
