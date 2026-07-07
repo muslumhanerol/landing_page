@@ -43,7 +43,8 @@ export default function LandingSections({
                     <div className='mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4'>
                         {stats.map((item) =>(
                             <div key={item.lable} className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-3 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400/40">
-                                <p className=""></p>
+                                <p className="text-xl font-bold text-blue-300">{item.value}</p>
+                                <p className="text-xl text-zinc-400">{item.label}</p>
                             </div>
                         ))}
                     </div>
