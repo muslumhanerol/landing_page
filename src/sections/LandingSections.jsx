@@ -51,7 +51,11 @@ export default function LandingSections({
                 </div>
 
                 <div className="relative rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6 shadow-2xl shadow-blue-500/10">
-                    <div className="absolute -inset-0.5 -z-10 rounded-2xl bg-linear-to-r from-blue-500/15 to-white/10 blur-md"></div>
+                    <div className="absolute -inset-0.5 -z-10 rounded-2xl bg-linear-to-r from-blue-500/15 to-white/10 blur-md">
+                        <div className="mb-6 flex items-center justify-between">
+                            <h2 className="text-lg font-semibold">Make corps Operations</h2>
+                        </div>                    
+                    </div>
                 </div>
             </section>
         </main>
