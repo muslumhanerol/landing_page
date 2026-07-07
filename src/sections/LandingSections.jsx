@@ -42,13 +42,16 @@ export default function LandingSections({
                     
                     <div className='mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4'>
                         {stats.map((item) =>(
-                            <div key={item.lable} className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-3 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400/40">
+                            <div key={item.label} className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-3 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400/40">
                                 <p className="text-xl font-bold text-blue-300">{item.value}</p>
                                 <p className="text-xl text-zinc-400">{item.label}</p>
                             </div>
                         ))}
-                    </div>
-                
+                    </div>                
+                </div>
+
+                <div className="relative rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6 shadow-2xl shadow-blue-500/10">
+                    <div className="absolute -inset-0.5 -z-10 rounded-2xl bg-linear-to-r from-blue-500/15 to-white/10 blur-md"></div>
                 </div>
             </section>
         </main>
