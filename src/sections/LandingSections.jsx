@@ -51,7 +51,7 @@ export default function LandingSections({
                 </div>
 
                 <div className="relative rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6 shadow-2xl shadow-blue-500/10">
-                    <div className="absolute -inset-0.5 -z-10 rounded-2xl bg-linear-to-r from-blue-500/15 to-white/10 blur-md">
+                    <div className="absolute -inset-0.5 -z-10 rounded-2xl bg-linear-to-r from-blue-500/15 to-white/10 blur-md"/>
                         <div className="mb-6 flex items-center justify-between">
                             <h2 className="text-lg font-semibold">Make corps Operations</h2>
                             <span className='rounded-full bg-emerald-400/15 px-3 py-1 text-xs text-emerald-300'>+%130 Productivity</span>
@@ -64,13 +64,16 @@ export default function LandingSections({
                                     <span className='text-sm text-blue-300'>AI Active</span>
                                 </div>
                             ))}
-                        </div>
-
-
-                    </div>
+                        </div>                    
                 </div>
+            </section>
+
+            <section data-reveal className="reveal-up" >
 
             </section>
+
+
+
         </main>
     )
 }
