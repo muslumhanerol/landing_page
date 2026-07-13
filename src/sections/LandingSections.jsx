@@ -54,9 +54,22 @@ export default function LandingSections({
                     <div className="absolute -inset-0.5 -z-10 rounded-2xl bg-linear-to-r from-blue-500/15 to-white/10 blur-md">
                         <div className="mb-6 flex items-center justify-between">
                             <h2 className="text-lg font-semibold">Make corps Operations</h2>
-                        </div>                    
+                            <span className='rounded-full bg-emerald-400/15 px-3 py-1 text-xs text-emerald-300'>+%130 Productivity</span>
+                        </div>
+
+                        <div className='space-y-4'>
+                            {['Customer Support', 'Sales Enablement', 'Data Processing'].map((item) => (
+                                <div key={item} className="flex items-center justify-between rounded-xl border border-zinc-800 bg-zinc-950/70 px-4 py-3 transition-all duration-300 hover:border-blue-400/40 hover:bg-zinc-900">
+                                    <span className='text-zinc-200'>{item}</span>
+                                    <span className='text-sm text-blue-300'>AI Active</span>
+                                </div>
+                            ))}
+                        </div>
+
+
                     </div>
                 </div>
+
             </section>
         </main>
     )
