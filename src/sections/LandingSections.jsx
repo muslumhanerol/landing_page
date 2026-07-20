@@ -72,13 +72,23 @@ export default function LandingSections({
                 <div className="mb-6 flex flex-wrap items-center gap-3 text-xs uppercase tracking-widest text-zinc-400">
                     <span>Trusted by</span>
                     {['Orbitly', 'CloudPeak', 'PulseOps', 'QantaFin', 'BrightLoop'].map((brand)=> (
-                        <span key={brand} className="rounded-full border border-zinc-700 px-3 py-1"></span>
+                        <span key={brand} className="rounded-full border border-zinc-700 px-3 py-1">{brand}</span>
                     ))}
                 </div>
-
             </section>
 
+            <section data-reveal className="reveral-up rounded-2xl border border-zinc-800 bg-zinc-900/35 p-8">
+                    <h2 className="mb-8 text-2xl font-semibold md:text-3xl">How Our AI Company LAUNCH</h2>
+                    <div className="grid gap-6 md:grid-cols-3 ">
+                        {workflowSteps.map((item) => (
+                            <articlec key={item.step} className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400/40">
+                                
+                            </articlec>
 
+                        ))}
+                    </div>
+            
+            </section>
 
         </main>
     )
