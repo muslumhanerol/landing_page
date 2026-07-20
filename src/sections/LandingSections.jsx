@@ -68,7 +68,7 @@ export default function LandingSections({
                 </div>
             </section>
 
-            <section data-reveal className="reveal-up" >
+            <section data-reveal className="reveal-up33" >
 
             </section>
 
