@@ -68,7 +68,13 @@ export default function LandingSections({
                 </div>
             </section>
 
-            <section data-reveal className="reveal-up33" >
+            <section data-reveal className="reveal-up">
+                <div className="mb-6 flex flex-wrap items-center gap-3 text-xs uppercase tracking-widest text-zinc-400">
+                    <span>Trusted by</span>
+                    {['Orbitly', 'CloudPeak', 'PulseOps', 'QantaFin', 'BrightLoop'].map((brand)=> (
+                        <span key={brand} className="rounded-full border border-zinc-700 px-3 py-1"></span>
+                    ))}
+                </div>
 
             </section>
 
