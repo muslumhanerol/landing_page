@@ -92,6 +92,15 @@ export default function LandingSections({
 
             <div id="features" data-reveal className="reveal-up">
                 <h2 className="mb-8 text-2xl font-semibold md:text-3xl">Products and Services</h2>
+                <div className="grid gap-6 md:grid-cols-3">
+                    {services.map((service) => (
+                        <article key={service.name} className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/10">
+                            <services.icon className="mb-3 text-xl text-blue-300" />
+                            <h3 className="mb-3 text-xl font-semibold">{service.map}</h3>
+                            <p className="text-zinc-300">{service.summary}</p>
+                        </article>
+                    ))}
+                </div>
             </div>
             
         
