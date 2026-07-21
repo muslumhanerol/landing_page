@@ -85,13 +85,16 @@ export default function LandingSections({
                                 <p className="mb-3 text-sm font-semibold tracking-widest text-blue-300">{item.step}</p>
                                 <h3 className="mb-3 text-xl font-semibold">{item.title}</h3>
                                 <p className="text-zinc-300">{item.detail}</p>
-
                             </articlec>
                         ))}
-                    </div>
-            
+                    </div>            
             </section>
 
+            <div id="features" data-reveal className="reveal-up">
+                <h2 className="mb-8 text-2xl font-semibold md:text-3xl">Products and Services</h2>
+            </div>
+            
+        
         </main>
     )
 }
