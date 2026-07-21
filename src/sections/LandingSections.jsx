@@ -90,7 +90,7 @@ export default function LandingSections({
                     </div>            
             </section>
 
-            <div id="features" data-reveal className="reveal-up">
+            <section id="features" data-reveal className="reveal-up">
                 <h2 className="mb-8 text-2xl font-semibold md:text-3xl">Products and Services</h2>
                 <div className="grid gap-6 md:grid-cols-3">
                     {services.map((service) => (
@@ -101,8 +101,11 @@ export default function LandingSections({
                         </article>
                     ))}
                 </div>
-            </div>
-            
+            </section>
+
+            <section className="">
+
+            </section>            
         
         </main>
     )
