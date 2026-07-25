@@ -111,6 +111,9 @@ export default function LandingSections({
                             <button onClick={setActiveShowcase((prev) => (prev - 1 + showcases.lenght) % showcases.lenght)} className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-700 text-sm transition hover:border-blue-400" aria-label="Previous slide">
                                 <FaArrowLeft />
                             </button>
+                            <button onClick={setActiveShowcase((prev) => (prev + 1 ) % showcases.lenght)} className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-700 text-sm transition hover:border-blue-400" aria-label="Next slide">
+                                <FaArrowRight />
+                            </button>
                         </div>
                     </div>
             </section>            
