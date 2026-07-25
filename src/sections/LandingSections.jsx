@@ -103,7 +103,7 @@ export default function LandingSections({
                 </div>
             </section>
 
-            <section className="">
+            <section data-reveal className="reveal-up rounded-2xl border border-zinc-800 bg-zinc-900/40 p-8">
 
             </section>            
         
