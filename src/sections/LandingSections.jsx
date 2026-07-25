@@ -105,6 +105,14 @@ export default function LandingSections({
 
             <section data-reveal className="reveal-up rounded-2xl border border-zinc-800 bg-zinc-900/40 p-8">
 
+                    <div className="mb-6 flex items-center justify-between gap-3">
+                        <h2 className="text-2xl font-semibold md:text-3xl">Platform Preview Slider</h2>
+                        <div className="flex gap-2">
+                            <button onClick={setActiveShowcase((prev) => (prev - 1 + showcases.lenght) % showcases.lenght)} className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-700 text-sm transition hover:border-blue-400" aria-label="Previous slide">
+                                <FaArrowLeft />
+                            </button>
+                        </div>
+                    </div>
             </section>            
         
         </main>
