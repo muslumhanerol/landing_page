@@ -121,12 +121,16 @@ export default function LandingSections({
                         <div className="flex transition-transform duration-700 ease-out" style={{transform: `translateX (-${activeShowcase * 100}%)` }}>
                             {showcases.map((item) => (
                                 <article key={item.title} className="min-w-full bg-linear-to-br from-zinc-900 to-zinc-950 p-8">
-                                    <p className="mb-3 inline-flex rounded-full border border-blue-400/30 bg-blue-400/10 px-3 py-1 text-xs text-blue-300"></p>
+                                    <p className="mb-3 inline-flex rounded-full border border-blue-400/30 bg-blue-400/10 px-3 py-1 text-xs text-blue-300">{item.metric}</p>
+                                    <item.icon className="mb-4 text-2xl text-blue-300" />
+                                    <h3 className="mb-3 text-2xl font-semibold text-blue-200">{item.title}</h3>
+                                    <p className="max-w-2xl text-zinc-300">{item.description}</p>
                                 </article>
                             ))}
                         </div>
                     </div>
 
+                    
             </section>            
         
         </main>
