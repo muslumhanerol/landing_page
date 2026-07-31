@@ -118,7 +118,13 @@ export default function LandingSections({
                     </div>
 
                     <div className="overflow-hidden rounded-xl border border-zinc-800">
-                        <div className="flex transition-transform duration-700 ease-out" style={{transform: `translateX (-${activeShowcase * 100}%)` }}></div>
+                        <div className="flex transition-transform duration-700 ease-out" style={{transform: `translateX (-${activeShowcase * 100}%)` }}>
+                            {showcases.map((item) => (
+                                <article key={item.title} className="min-w-full bg-linear-to-br from-zinc-900 to-zinc-950 p-8">
+                                    <p className="mb-3 inline-flex rounded-full border border-blue-400/30 bg-blue-400/10 px-3 py-1 text-xs text-blue-300"></p>
+                                </article>
+                            ))}
+                        </div>
                     </div>
 
             </section>            
