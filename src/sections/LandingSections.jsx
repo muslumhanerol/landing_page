@@ -117,7 +117,9 @@ export default function LandingSections({
                         </div>
                     </div>
 
-                    <div className="41"></div>
+                    <div className="overflow-hidden rounded-xl border border-zinc-800">
+                        <div className="flex transition-transform duration-700 ease-out" style={{transform: `translateX (-${activeShowcase * 100}%)` }}></div>
+                    </div>
 
             </section>            
         
