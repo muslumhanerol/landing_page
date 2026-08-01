@@ -128,9 +128,9 @@ export default function LandingSections({
                                 </article>
                             ))}
                         </div>
-                    </div>
+                    </div>43
 
-                    
+
             </section>            
         
         </main>
