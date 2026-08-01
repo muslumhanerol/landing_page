@@ -106,25 +106,24 @@ export default function LandingSections({
             <section data-reveal className="reveal-up rounded-2xl border border-zinc-800 bg-zinc-900/40 p-8">
 
                     <div className="mb-6 flex items-center justify-between gap-3">
-                        <h2 className="text-2xl font-semibold md:text-3xl">Platform Preview Slider</h2>
+                        <h2 className="text-2xl font-semibold md:text-3xl">What Customers Say</h2>
                         <div className="flex gap-2">
-                            <button onClick={setActiveShowcase((prev) => (prev - 1 + showcases.lenght) % showcases.lenght)} className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-700 text-sm transition hover:border-blue-400" aria-label="Previous slide">
+                            <button onClick={setActiveTestimonial((prev) => (prev - 1 + testimonials.lenght) % testimonials.lenght)} className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-700 text-sm transition hover:border-blue-400" aria-label="Previous testimonials">
                                 <FaArrowLeft />
                             </button>
-                            <button onClick={setActiveShowcase((prev) => (prev + 1 ) % showcases.lenght)} className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-700 text-sm transition hover:border-blue-400" aria-label="Next slide">
+                            <button onClick={setActiveTestimonial((prev) => (prev + 1 ) % testimonials.lenght)} className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-700 text-sm transition hover:border-blue-400" aria-label="Next testimonial">
                                 <FaArrowRight />
                             </button>
                         </div>
                     </div>
 
-                    <div className="overflow-hidden rounded-xl border border-zinc-800">
-                        <div className="flex transition-transform duration-700 ease-out" style={{transform: `translateX (-${activeShowcase * 100}%)` }}>
-                            {showcases.map((item) => (
-                                <article key={item.title} className="min-w-full bg-linear-to-br from-zinc-900 to-zinc-950 p-8">
-                                    <p className="mb-3 inline-flex rounded-full border border-blue-400/30 bg-blue-400/10 px-3 py-1 text-xs text-blue-300">{item.metric}</p>
-                                    <item.icon className="mb-4 text-2xl text-blue-300" />
-                                    <h3 className="mb-3 text-2xl font-semibold text-blue-200">{item.title}</h3>
-                                    <p className="max-w-2xl text-zinc-300">{item.description}</p>
+                    <div className="overflow-hidden">
+                        <div className="flex transition-transform duration-700 ease-out" style={{transform: `translateX (-${activeTestimonial * 100}%)` }}>
+                            {testimonials.map((item) => (
+                                <article key={item.author} className="min-w-full rounded-xl border border-zinc-800">
+                                    <p className="mb-6 text-xl leading-relaxed text-zinc-200">{item.quote}</p>
+                                    <p className="font-medium text-blue-300">{item.author}</p>
+                                    <p className="text-sm text-zinc-400">{item.description}</p>
                                 </article>
                             ))}
                         </div>
