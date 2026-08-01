@@ -135,7 +135,8 @@ export default function LandingSections({
                             <button key={item.title} onClick={() => setActiveShowcase(index)} className={`h-2.5 rounded-full transition-all ${activeShowcase === index ? 'w-8 bg-blue-300' : 'w-2.5 bg-zinc-600'}`} />
                         ))}
                     </div>
-            </section>            
+            </section>
+                        
         
         </main>
     )
