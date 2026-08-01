@@ -128,9 +128,13 @@ export default function LandingSections({
                                 </article>
                             ))}
                         </div>
-                    </div>43
+                    </div>
 
-
+                    <div className="mt-4 flex justify-center gap-2">
+                        {showcases.map((item, index) =>(
+                            <button key={item.title} onClick={() => setActiveShowcase(index)} className={`h-2.5 rounded-full transition-all ${activeShowcase === index ? 'w-8 bg-blue-300' : 'w-2.5 bg-zinc-600'}`} />
+                        ))}
+                    </div>
             </section>            
         
         </main>
