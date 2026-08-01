@@ -120,7 +120,7 @@ export default function LandingSections({
                     <div className="overflow-hidden">
                         <div className="flex transition-transform duration-700 ease-out" style={{transform: `translateX (-${activeTestimonial * 100}%)` }}>
                             {testimonials.map((item) => (
-                                <article key={item.author} className="min-w-full rounded-xl border border-zinc-800">
+                                <article key={item.author} className="min-w-full rounded-xl border border-zinc-800 bg-zinc-950/50 p-8">
                                     <p className="mb-6 text-xl leading-relaxed text-zinc-200">{item.quote}</p>
                                     <p className="font-medium text-blue-300">{item.author}</p>
                                     <p className="text-sm text-zinc-400">{item.description}</p>
@@ -130,10 +130,23 @@ export default function LandingSections({
                     </div>
 
                     <div className="mt-4 flex justify-center gap-2">
-                        {showcases.map((item, index) =>(
-                            <button key={item.title} onClick={() => setActiveShowcase(index)} className={`h-2.5 rounded-full transition-all ${activeShowcase === index ? 'w-8 bg-blue-300' : 'w-2.5 bg-zinc-600'}`} />
+                        {testimonials.map((item, index) =>(
+                            <button key={item.author} onClick={() => setActiveTestimonial(index)} className={`h-2.5 rounded-full transition-all ${activeTestimonial === index ? 'w-8 bg-blue-300' : 'w-2.5 bg-zinc-600'}`} />
                         ))}
                     </div>
+            </section>
+
+            <section data-reveal className="reveal-up">
+                <h2 className="mb-8 text-2xl font-semibold md:text-3xl">Why Teams Choose Us</h2>
+                <div className="grid gap-6 md:grid-cols-3">
+                    {features.map((features) => (
+                        <article key={features.title} className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/10">
+                            <features.icon className="mb-3 text-xl text-blue-300" />
+                            <h3 className="mb-3 text-xl font-semibold">{features.title}</h3>
+                            <p className="text-zinc-300">{features.description}</p>
+                        </article>
+                    ))}
+                </div>
             </section>
 
             
