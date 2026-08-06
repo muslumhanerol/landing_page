@@ -136,22 +136,18 @@ export default function LandingSections({
                     </div>
             </section>
 
-            <section data-reveal className="reveal-up">
-                <h2 className="mb-8 text-2xl font-semibold md:text-3xl">Why Teams Choose Us</h2>
-                <div className="grid gap-6 md:grid-cols-3">
-                    {features.map((features) => (
-                        <article key={features.title} className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/10">
+            <section data-reveal className="reveal-up rounded-2xl border border-zinc-800 bg-zinc-900/35 p-8">
+                <h2 className="mb-8 text-2xl font-semibold md:text-3xl">Built to Integrate with Your Stack</h2>
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 ">
+                    {integrations.map((item) => (
+                        <article key={item.name} className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/10">
                             <features.icon className="mb-3 text-xl text-blue-300" />
                             <h3 className="mb-3 text-xl font-semibold">{features.title}</h3>
                             <p className="text-zinc-300">{features.description}</p>
                         </article>
                     ))}
                 </div>
-            </section>
-
-            
-
-        
+            </section>        
         </main>
     )
 }
