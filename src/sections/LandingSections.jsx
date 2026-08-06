@@ -150,7 +150,12 @@ export default function LandingSections({
                 </div>
             </section>
 
-            <section id="pricing" data-reveal className="reveal-up rounded-2xl border border-zinc-800 bg-zinc-900/30 p-8"></section>        
+            <section id="pricing" data-reveal className="reveal-up rounded-2xl border border-zinc-800 bg-zinc-900/30 p-8">
+                    <div className="mb-8 flex flex-wrap item-center justify-center gap-4 md:justify-between">
+                        
+                    </div>
+            
+            </section>        
         </main>
     )
 }
