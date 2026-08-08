@@ -167,7 +167,23 @@ export default function LandingSections({
 
                     <div className="grid gap-6 md:grid-cols-3">
                         {pricing.map((plan) => (
-                            <article key={plan.tier} className={`rounded-xl border p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${plan.popular ? 'border-blue-400 bg-blue-400/10 shadow-lg shadow-blue-500/20' : 'border-zinc-800 bg-zinc-900/50 hover:border-blue-400/40 hover:shadow-blue-500/10'}`}></article>
+                            <article key={plan.tier} className={`rounded-xl border p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${plan.popular ? 'border-blue-400 bg-blue-400/10 shadow-lg shadow-blue-500/20' : 'border-zinc-800 bg-zinc-900/50 hover:border-blue-400/40 hover:shadow-blue-500/10'}`}>
+                                <p className="mb-2 text-sm text-zinc-400">{plan.tier}</p>
+                                <p className="mb-3 text-3xl font-bold transition-all duration-300">
+                                    {annualBilling ? plan.annual : plan.monthly}
+                                    {plan.monthly !== 'Custom' && <span className="text-sm text-zinc-400">/mo</span>}
+                                </p>
+                                <p className="mb-4 text-zinc-300">{plan.description}</p>
+                                <ul className="mb-6 space-y-2 text-sm text-zinc-300">
+                                    {plan.features.map((item) => (
+                                        <li key={item} className="flex items-center gap-2">
+                                            <FaCheckCircle className="mt-0.5 text-blue-300"/>
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                                <button className="w-full rounded-lg border border-zinc-600 px-4 py-2 font-medium transition hover:border-blue-400 hover:text-blue-300">Get Start</button>
+                            </article>
                         ))}
                     </div>
             
