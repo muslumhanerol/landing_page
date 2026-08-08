@@ -152,7 +152,12 @@ export default function LandingSections({
 
             <section id="pricing" data-reveal className="reveal-up rounded-2xl border border-zinc-800 bg-zinc-900/30 p-8">
                     <div className="mb-8 flex flex-wrap item-center justify-center gap-4 md:justify-between">
-                        
+                        <h2 className="w-full text-center text-2xl font-semibold md:w-auto md:text md:text-3xl">
+                            Simple Pricing For Every Stage
+                        </h2>
+                        <div className="mx-auto rounded-lg border border-zinc-700 p-1 text-sm md:mx-0">
+                            <button onClick={() => setAnnualBilling(false)} className={`rounded-md px-4 py-2 transition-all duration-300`}></button>
+                        </div>
                     </div>
             
             </section>        
