@@ -156,8 +156,19 @@ export default function LandingSections({
                             Simple Pricing For Every Stage
                         </h2>
                         <div className="mx-auto rounded-lg border border-zinc-700 p-1 text-sm md:mx-0">
-                            <button onClick={() => setAnnualBilling(false)} className={`rounded-md px-4 py-2 transition-all duration-300`}></button>
+                            <button onClick={() => setAnnualBilling(false)} className={`rounded-md px-4 py-2 transition-all duration-300 ${annualBilling ? 'text-zinc-400' : 'bg-zinc-100 text-zinc-900'}`}>
+                                Monthly
+                            </button>
+                            <button onClick={() => setAnnualBilling(true)} className={`rounded-md px-4 py-2 transition-all duration-300 ${annualBilling ? 'bg-zinc-400 text-white' : 'text-zinc-400'}`}>
+                                Annual
+                            </button>
                         </div>
+                    </div>
+
+                    <div className="grid gap-6 md:grid-cols-3">
+                        {pricing.map((plan) => (
+                            <article key={plan.tier} className={`rounded-xl border p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${plan.popular ? 'border-blue-400 bg-blue-400/10 shadow-lg shadow-blue-500/20' : 'border-zinc-800 bg-zinc-900/50 hover:border-blue-400/40 hover:shadow-blue-500/10'}`}></article>
+                        ))}
                     </div>
             
             </section>        
