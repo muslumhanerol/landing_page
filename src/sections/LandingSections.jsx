@@ -182,12 +182,15 @@ export default function LandingSections({
                                         </li>
                                     ))}
                                 </ul>
-                                <button className="w-full rounded-lg border border-zinc-600 px-4 py-2 font-medium transition hover:border-blue-400 hover:text-blue-300">Get Start</button>
+                                <button className="w-full rounded-lg border border-zinc-600 px-4 py-2 font-medium transition hover:border-blue-400 hover:text-blue-300">Get Started</button>
                             </article>
                         ))}
                     </div>
             
-            </section>        
+            </section>
+
+
+            <section id="about" className=""></section>        
         </main>
     )
 }
