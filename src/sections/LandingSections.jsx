@@ -190,7 +190,43 @@ export default function LandingSections({
             </section>
 
 
-            <section id="about" className=""></section>        
+            <section id="about" data-reveal className="reveal-up gap-8 rounded-2xl border border-zinc-800 bg-linear-to-r from-zinc-900 to-zinc-900/40 p-8 md:grid-cols-2">
+            <div>
+                <h2 className="mb-4 text-2xl font-semibold md:text-3xl">Built by AI Experts, For Product Teams</h2>
+                <p className="text-zinc-300">
+                    We are a cross-functional team of AI researchers, engineers ....
+                </p>
+            </div>
+
+            <div className="space-y-4">
+                {team.map((member) =>(
+                    <div key={member.name} className="rounded-lg border border-zinc-700 bg-zinc-950/50 px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-400/40">
+                        <p className="font-medium">{member.name}</p>
+                        <p className="text-sm text-zinc-400">{member.role}</p>
+                    </div>
+                ))}
+            </div>
+            
+            </section>
+
+            <section id="faq" data-reveal className="reveal-up rounded-2xl border border-zinc-800 bg-zinc-900/40 p-8">
+
+                <h2 className="mb-6 text-2xl font-semibold md:text-3xl">Frequently Asked Questions</h2>
+                <div className="space-y-3">
+                    {faqs.map((item, index) => {
+                        const isOpen = openFaq ===index
+                        return (
+                            <div key={item.q} className="rounded.lg border border-zinc-700 bg-zinc-950/40 transition-colors duration-300 hover:border-blue-400/40">
+                                <button className=""></button>
+                            </div>
+                        )
+
+                    })}
+                </div>
+            
+            
+            </section>
+
         </main>
     )
 }
