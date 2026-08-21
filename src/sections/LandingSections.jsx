@@ -229,6 +229,17 @@ export default function LandingSections({
                     })}
                 </div>
             </section>
+
+            <section data-reveal className="reveal-up rounded-2xl border border-blue-400/30 bg-blus-500/10 p-8 text-center">
+                    <h2 className="mb-4 text-2xl font-semibold md:text-3xl">Ready to Scale with AI?</h2>
+                    <p className="mx-auto mb-6 max-w-2xl text-zinc-200">
+                        Launch your first AI workflow in days, not months. Join teams using AI to automate, predict and grow faster.
+                    </p>
+                    <button className="rounded-lg bg-blue-500 px-7 py-3 font-semibold text-white shadow-lg shadow-blue-500/15 transition-all duration-300 hover:-translate-0.5 hover:bg-blue-400">
+                    Schedule Your Strategy Call
+                    
+                    </button>
+            </section>
         </main>
     )
 }
