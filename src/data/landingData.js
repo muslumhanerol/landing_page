@@ -39,3 +39,21 @@ export const features = [
         description: 'Protect your data with encrypted pipelines, robust access controls and compliance-ready infrastructure.'
     }
 ]
+
+export const services = [
+    {
+        icon: FaBolt,
+        name: 'Intelligent Assistant API',
+        summary: 'Plug in conversational AI to support teams and customer-facing experiences.'
+    },
+    {
+        icon: FaBrain,
+        name: 'Workflow Copilot',
+        summary: 'Augment operations with contect-aware suggestions and one-click automation.'
+    },
+    {
+        icon: FaChartLine,
+        name: 'Predictive Intelligence',
+        summary: 'Forecast demand, detect risk, and optimize decisions with machine learning models.'
+    }
+]
