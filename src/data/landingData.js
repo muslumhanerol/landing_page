@@ -57,3 +57,18 @@ export const services = [
         summary: 'Forecast demand, detect risk, and optimize decisions with machine learning models.'
     }
 ]
+
+export const showCases = [
+    {
+        icon: FaCloud,
+        title: 'Command Center',
+        description: 'Monitor all AI workflows, alert and system health in one reaş-time dashboard.',
+        metric: '98.2% accuracy'
+    },
+    {
+        icon: FaRobot,
+        title: 'Automation Studio',
+        description: 'Design no-code AI automations with triggers, routing and approval chains',
+        metric: '3.4x faster setup'
+    }
+]
