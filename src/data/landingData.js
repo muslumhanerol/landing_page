@@ -78,3 +78,19 @@ export const showCases = [
         metric: '+31% conversion lift'
     }
 ]
+
+export const workflowSteps = [
+    {
+        step: '01',
+        title: 'Discovery & Data Mapping',
+        details: 'We identify your highest-impact workflows and data sources, KPIs and constraints.'
+    },
+    {
+        step: '02',
+        title: 'Pilot Build in 14 Days',
+        details: 'Our team ships a production-grade pilot with measurable performance and clear ROI goals.'
+    },
+    {
+        
+    }
+]
