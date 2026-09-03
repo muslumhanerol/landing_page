@@ -70,5 +70,11 @@ export const showCases = [
         title: 'Automation Studio',
         description: 'Design no-code AI automations with triggers, routing and approval chains',
         metric: '3.4x faster setup'
+    },
+    {
+        icon: FaChartLine,
+        title: 'İnsight Engine',
+        description: 'Surface demand trends, churn risk and conversion opportunities before they happen.',
+        metric: '+31% conversion lift'
     }
 ]
