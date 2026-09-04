@@ -91,6 +91,19 @@ export const workflowSteps = [
         details: 'Our team ships a production-grade pilot with measurable performance and clear ROI goals.'
     },
     {
-        
+        step: '03',
+        title: 'Scale & Optimization',
+        details: 'We continuously tube models, monitor drift and expand automations across departments.'
     }
+]
+
+export const infrastructure = [
+    {name: 'Slack', icon: 'FaSlack'},
+    {name: 'HubSpot', icon: 'FaHubspot'},
+    {name: 'Salesforce', icon: 'FaSalesforce'},
+    {name: 'Notion', icon: 'FaRegFileAlt'},
+    {name: 'AWS', icon:'FaAws'},
+    {name: 'Azure', icon:'FaMicrosoft'},
+    {name: 'Stripe', icon:'FaStripe'},
+    {name: 'Snowflake', icon:'FaSnowflake'}
 ]
