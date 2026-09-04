@@ -107,3 +107,7 @@ export const infrastructure = [
     {name: 'Stripe', icon:'FaStripe'},
     {name: 'Snowflake', icon:'FaSnowflake'}
 ]
+
+export const testimonials = [
+    
+]
