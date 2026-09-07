@@ -109,5 +109,14 @@ export const infrastructure = [
 ]
 
 export const testimonials = [
-    
+    {
+        quote:'NeuraForge helped us launch an AI support assistant in two weeks and cut response time by 63%.',
+        author: 'Maya Rios',
+        role: 'VP Product Lumina Health'
+    },
+    {
+        quote:'The predictive engine surfaced revenue opportunities we had never captured with our previous stack.',
+        author: 'Oliver Grant',
+        role: 'COO, Nova Commerce'
+    }
 ]
