@@ -125,3 +125,29 @@ export const testimonials = [
         role: 'Head of Ops, ApexFlow'
     }
 ]
+
+export const pricing = [
+    {
+        tier: 'Starter',
+        monthly: '$99',
+        annual: '$79',
+        description: 'For early-stage teams validating AI workflows.',
+        features: ['1 AI workflow', 'Basic analytics', 'Email support']
+    },
+    {
+        tier: 'Growth',
+        monthly: '$299',
+        annual: '$239',
+        description: 'For scaling teams shipping AI-powered products.',
+        features: ['Unlimited workflows', 'Advanced analytics', 'Priority support'],
+        popular: true
+    },
+    {
+        tier: 'Enterprise',
+        monthly: 'Custom',
+        annual: 'Custom',
+        description: 'For mission-critical AI at enterprise scale',
+        features: ['Private deployment', 'SSO + compliance', 'Dedicated AI arhitect'],
+        popular: true
+    }
+]
