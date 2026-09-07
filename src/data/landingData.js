@@ -118,5 +118,10 @@ export const testimonials = [
         quote:'The predictive engine surfaced revenue opportunities we had never captured with our previous stack.',
         author: 'Oliver Grant',
         role: 'COO, Nova Commerce'
+    },
+    {
+        quote:'Their team feels like an extension of ours - strategic, fast and deeply technical.',
+        author: 'Sana Idris',
+        role: 'Head of Ops, ApexFlow'
     }
 ]
