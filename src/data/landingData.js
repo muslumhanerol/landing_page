@@ -151,3 +151,24 @@ export const pricing = [
         popular: true
     }
 ]
+
+export const faqs = [
+    {
+        q: 'How fast can we launch our first AI workflow?',
+        a: 'Most teams deploy their first workflow within 7-14 days with our onboarding and templates.'
+    },
+    {
+        q: 'Do you support private or on-prem infrastructure?',
+        a: ' Yes. Growth and Enterprise customers can run on private cloud, VPC, of hybrid environments.'
+    },
+    {
+        q: 'Can we connect our existing tools and data sources?',
+        a: 'Absolutely: We provide connectors for common CRMs, warehouses, support tools and custom APIs.'
+    }
+]
+
+export const team = [
+    {name: 'Mushaner', role: 'CEO & AI Strategy Lead'},
+    {name: 'Alex', role: 'CTO & ML Architect'},
+    {name: 'Lenovo', role: 'Head of Product'}
+]
