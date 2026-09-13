@@ -13,3 +13,18 @@ body{
     font-family: Inter, "Segoe UI", Roboto, Helvatic, Arial, Helvetica, sans-serif;
     background-color: #000;
 }
+
+button,
+a,
+[role='button'] {
+    cursor: pointer;
+}
+
+.glow {
+    position: absolute;
+    pointer-events: none;
+    border-radius: 9999px;
+    filter: blur(95px);
+    opacity:(0.22);
+    animation: float 12s ease-in-out infinite;
+}
