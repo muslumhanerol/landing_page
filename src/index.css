@@ -75,3 +75,12 @@ a,
     transition: grid-template-rows 320ms ease, opacity 320ms ease;
 }
 
+.faq-content p {
+    overflow: hidden;
+    margin: 0;
+}
+
+.faq-open {
+    grid-template-rows: 1fr;
+    opacity: 1;
+}
