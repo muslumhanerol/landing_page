@@ -28,3 +28,28 @@ a,
     opacity:(0.22);
     animation: float 12s ease-in-out infinite;
 }
+
+.glow-cyan {
+    width: 24rem;
+    height: 24rem;
+    left: -6rem;
+    top: -5rem;
+    background: #3b82f6;
+}
+
+.glow-violet{
+    width: 26rem;
+    height: 26rem;
+    right: -8rem;
+    top: 9rem;
+    background: #fff;
+    opacity: 0.1;
+    animation-delay: 1.8s;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px) translateX(0px);
+    }
+}
