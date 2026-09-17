@@ -1,5 +1,20 @@
 import { useState } from 'react'
-
+import BackToTopButton from './components/common/BackToTopButton'
+import SiteFooter from './components/layout/SiteFooter'
+import SiteHeader from './components/layout/SiteHeader'
+import LandingSections from './components/sections/LandingSections'
+import {
+  faqs,
+  features,
+  integrations,
+  pricing,
+  services,
+  showcases,
+  stats,
+  team,
+  testimonials,
+  workflowSteps,
+} from './data/landingData'
 
 function App() {
   const [count, setCount] = useState(0)
