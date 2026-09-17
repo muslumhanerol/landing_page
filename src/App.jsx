@@ -15,6 +15,9 @@ import {
   testimonials,
   workflowSteps,
 } from './data/landingData'
+import {useAutoRotate} from './hooks/useAutoRotate'
+import {useRevealOnScroll} from './hooks/useRevealOnScroll'
+import {useScrollState} from './hooks/useScrollState'
 
 function App() {
   const [count, setCount] = useState(0)
