@@ -25,6 +25,10 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [activeTestimonial, setactiveTestimonial] = useState(0)
   const [activeShowcase, setactiveShowcase] = useState(0)
+
+  useRevealOnScroll()
+  const { isScrolled, showTopButton } = useScrollState()
+  useAutoRotate(setactiveTestimonial, )
 }
 
 export default App
