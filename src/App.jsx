@@ -38,7 +38,7 @@ function App() {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_45%)]"/>
 
       <div className="mx-auto max-w-6xl px-6 py-24 lg:px-8">
-        
+        <SiteHeader isScrolled={isScrolled} menuOpen={menuOpen} onToggleMenu={() => setMenuOpen((prev) => !prev)} onCloseMenu={() => setMenuOpen(false)} />
       </div>
 
     </div>
