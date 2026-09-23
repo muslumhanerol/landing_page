@@ -42,11 +42,10 @@ function App() {
 
           <LandingSections stats={stats} workflowSteps={workflowSteps} services={services} showcases={showcases} activeShowcase={activeShowcase} setActiveShowcase={setactiveShowcase} features={features} testimonials={testimonials} activeTestimonial={activeTestimonial} setActiveTestimonial={setactiveTestimonial} integrations={integrations} pricing={pricing} annualBilling={annualBilling} setAnnualBilling={setAnnualBilling} team={team} faqs={faqs} openFaq={openFaq} setOpenFaq={setOpenFaq} />
 
-          
-
-
-
+          <SiteFooter />
       </div>
+
+      <BackToTopButton show={showTopButton} />
 
     </div>
   )
