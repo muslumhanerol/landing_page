@@ -39,6 +39,13 @@ function App() {
 
       <div className="mx-auto max-w-6xl px-6 py-24 lg:px-8">
         <SiteHeader isScrolled={isScrolled} menuOpen={menuOpen} onToggleMenu={() => setMenuOpen((prev) => !prev)} onCloseMenu={() => setMenuOpen(false)} />
+
+          <LandingSections stats={stats} workflowSteps={workflowSteps} services={services} showcases={showcases} activeShowcase={activeShowcase} setActiveShowcase={setactiveShowcase} features={features} testimonials={testimonials} activeTestimonial={activeTestimonial} setActiveTestimonial={setactiveTestimonial} integrations={integrations} pricing={pricing} annualBilling={annualBilling} setAnnualBilling={setAnnualBilling} team={team} faqs={faqs} openFaq={openFaq} setOpenFaq={setOpenFaq} />
+
+          
+
+
+
       </div>
 
     </div>
