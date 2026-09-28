@@ -172,3 +172,6 @@ export const team = [
     {name: 'Alex', role: 'CTO & ML Architect'},
     {name: 'Lenovo', role: 'Head of Product'}
 ]
+
+export const integrations = infrastructure;
+export const showcases = showCases;
