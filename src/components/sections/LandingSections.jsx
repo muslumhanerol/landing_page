@@ -108,10 +108,10 @@ export default function LandingSections({
                     <div className="mb-6 flex items-center justify-between gap-3">
                         <h2 className="text-2xl font-semibold md:text-3xl">What Customers Say</h2>
                         <div className="flex gap-2">
-                            <button onClick={setActiveTestimonial((prev) => (prev - 1 + testimonials.lenght) % testimonials.lenght)} className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-700 text-sm transition hover:border-blue-400" aria-label="Previous testimonials">
+                            <button onClick={() =>setActiveTestimonial((prev) => (prev - 1 + testimonials.lenght) % testimonials.lenght)} className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-700 text-sm transition hover:border-blue-400" aria-label="Previous testimonials">
                                 <FaArrowLeft />
                             </button>
-                            <button onClick={setActiveTestimonial((prev) => (prev + 1 ) % testimonials.lenght)} className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-700 text-sm transition hover:border-blue-400" aria-label="Next testimonial">
+                            <button onClick={() =>setActiveTestimonial((prev) => (prev + 1 ) % testimonials.lenght)} className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-700 text-sm transition hover:border-blue-400" aria-label="Next testimonial">
                                 <FaArrowRight />
                             </button>
                         </div>
