@@ -81,11 +81,11 @@ export default function LandingSections({
                     <h2 className="mb-8 text-2xl font-semibold md:text-3xl">How Our AI Company LAUNCH</h2>
                     <div className="grid gap-6 md:grid-cols-3 ">
                         {workflowSteps.map((item) => (
-                            <articlec key={item.step} className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400/40">
+                            <article key={item.step} className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400/40">
                                 <p className="mb-3 text-sm font-semibold tracking-widest text-blue-300">{item.step}</p>
                                 <h3 className="mb-3 text-xl font-semibold">{item.title}</h3>
                                 <p className="text-zinc-300">{item.detail}</p>
-                            </articlec>
+                            </article>
                         ))}
                     </div>            
             </section>
